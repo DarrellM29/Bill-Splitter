@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Lora&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #DADED4;
+    font-size: 1.05rem;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color:white;
+    overflow: hidden;
+    box-shadow: 0 2px 10px 0 black;
+}
+
+.title{
+    background-color: #A3BCB6;
+    padding: 0.7rem 0;
+}
+
+.title h1 {
+    text-align: center;
+    color: #3C403D
+}
+
+.input, .output {
+    padding: 2rem 2.5rem;
+}
+
+.input {
+    border-bottom: 1.75px dashed #A3BCB6;
+}
+
+.form-group label {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #A3BCB6;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: #39603D;
+}
+
+#calculate {
+    padding: 0.9rem 2.2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 1.25rem;
+    background: #A3BCB6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+#calculate:focus {
+    outline: 0;
+}
+
+#calculate:hover{
+    background: #39603D;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+
+.text h3 {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.text:nth-child(1) h3{
+    font-weight: 800;
+}
+.text:nth-child(1) span{
+    font-weight: 600;
+}
+

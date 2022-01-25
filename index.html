@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class = "container center">
+        <div class = "wrapper">
+            <div class = "title">
+                <h1>Bill Splitter</h1>
+            </div>
+
+            <div class = "input">
+                <form id = "splitter-form">
+                    <div class = "form-group">
+                        <label for = "subtotal">Subtotal</label>
+                        <input type = "number" id = "subtotal" class = "form-control" min = "0" step = "any" required>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "tip">Tip (%)</label>
+                        <input type = "number" id = "tip" class = "form-control" min = "0" step = "any" required>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "numPeople">Number of People</label>
+                        <input type = "number" id = "numPeople" class = "form-control" min = "0" step = "any" required>
+                    </div>
+
+                    <input type="submit" id="calculate" value="Calculate">
+                </form>
+            </div>
+
+            <div class = "output">
+
+                <div class = "text">
+                    <h3>Total Bill</h3>
+                    <span id="total-bill">$ 00.00</span>
+                </div>
+
+                <div class = "text">
+                    <h3>Per Person</h3>
+                    <span id="per-person">$ 00.00</span>
+                </div>
+
+                <div class = "text">
+                    <h3>Total Tip</h3>
+                    <span id="total-tip">$ 00.00</span>
+                </div>
+
+                <div class = "text">
+                    <h3>Tip Per Person</h3>
+                    <span id="tip-per-person">$ 00.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
